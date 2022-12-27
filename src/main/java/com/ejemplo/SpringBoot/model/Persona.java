@@ -24,6 +24,7 @@ public class Persona {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
+        
     }
     
 }
