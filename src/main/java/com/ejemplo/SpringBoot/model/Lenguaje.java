@@ -17,14 +17,16 @@ public class Lenguaje {
     private int Id;
     private String nombreLenguaje;
     private int porcentaje;
+    private String UrlImagen;
 
     public Lenguaje() {
     }
 
-    public Lenguaje(int Id, String nombreLenguaje, int porcentaje) {
+    public Lenguaje(int Id, String nombreLenguaje, int porcentaje, String urlImagen) {
         this.Id = Id;
         this.nombreLenguaje = nombreLenguaje;
         this.porcentaje = porcentaje;
+        this.UrlImagen=urlImagen;
     }
     
 }

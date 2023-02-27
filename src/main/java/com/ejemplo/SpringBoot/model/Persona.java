@@ -16,15 +16,22 @@ public class Persona {
     private Long id;//long mas cantidad de numeros
     private String nombre;
     private String apellido;
+    private String email;
+    private String usuario;
+    private String password;
 
     public Persona() {
     }
 
-    public Persona(Long id, String nombre, String apellido) {
+    public Persona(Long id, String nombre, String apellido, String email, String usuario, String password) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
-        
+        this.email = email;
+        this.usuario = usuario;
+        this.password = password;
     }
+
+    
     
 }
