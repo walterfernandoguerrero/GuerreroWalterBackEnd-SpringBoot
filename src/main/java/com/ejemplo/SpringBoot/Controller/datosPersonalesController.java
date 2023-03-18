@@ -17,7 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("datos")
 @RestController
-@CrossOrigin (origins="http://localhost:4200")
+//@CrossOrigin (origins="http://localhost:4200")
+@CrossOrigin(origins = {"https://portfolio-frontend-guerrero.web.app"})
 public class datosPersonalesController {
     @Autowired
     private IdatosPersonalesService datosServ;

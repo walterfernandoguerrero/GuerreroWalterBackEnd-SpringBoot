@@ -17,7 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("informacion")
 @RestController
-@CrossOrigin(origins="http://localhost:4200")
+//@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins = {"https://portfolio-frontend-guerrero.web.app"})
 public class acercaDeController {
     @Autowired
     private IAcercaDeService infoServ;
@@ -46,6 +47,6 @@ public class acercaDeController {
     //traer una informacion
     @GetMapping("/traerInfo")
     public acercaDe traerInfo(){
-        return infoServ.buscarInfo((int)29);
+        return infoServ.buscarInfo((int)11);
     }
 }
